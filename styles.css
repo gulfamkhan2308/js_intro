@@ -51,3 +51,18 @@ table tr:nth-child(even) {
 table tr:hover {
     background-color: #d18d8d;
 }
+.framimg{
+    height: auto;
+    width: 50vh;
+}
+.padding{
+    padding-left: 7vh;
+
+}
+
+.padding {
+    line-height: 1.8; /* Adjust as needed */
+}
+.padding {
+    line-height: 1.8; /* Adjust as needed */
+}

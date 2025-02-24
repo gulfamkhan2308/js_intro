@@ -46,7 +46,7 @@
     <section>
         <h2>7. Name some popular JavaScript frameworks and their uses.</h2>
         <ul>
-            <img src="./img/images.webp" alt="">
+            <img class="framimg" src="./img/images.webp" alt="">
             
             <li><strong>React:</strong> Used for building user interfaces, especially for single-page applications.</li>
             <li><strong>Angular:</strong> A full-fledged front-end framework developed by Google.</li>
@@ -55,7 +55,7 @@
     </section>
     <section>
         <h2>8. What is the MERN stack?</h2>
-        <p>The MERN stack consists of four technologies used for full-stack web development:</p>
+        <p class="padding">The MERN stack consists of four technologies used for full-stack web development:</p>
         <ul>
             <li><strong>MongoDB:</strong> NoSQL database</li>
             <li><strong>Express.js:</strong> Backend framework for Node.js</li>
@@ -84,8 +84,117 @@
             </tr>
         </table>
     </section>
+
+    <!-- Java Script Assignment 2 -->
+
+    <section>
+        <h2>Java Script Assignment/Task 2</h2>
+        
+    </section>
+    <section>
+        <h2>1. What are variables in JavaScript?</h2>
+        <p class="padding">Variables are used to store and manage data. We can think of them as containers for values like numbers, strings, or objects.</p>
+        <h3>
+            Declaring Variables in JavaScript
+        </h3>
+        <p class="padding">JavaScript provides three ways to declare variables:</p>
+        <ol class="padding">
+            <li><b>var</b> (old way, avoid using)</li>
+            <li><b>let</b> (modern and recommended for changeable values) </li>
+            <li><b>const</b> (for values that should not change)</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. What are the rules for nameing variables?</h2>
+        <h3 class="padding">Rules for Naming Variables</h3>
+        <ol class="padding">
+            <li>Variable names must start with a letter, _, or $.
+               </li>
+               <li>They cannot start with numbers.
+                </li>
+               <li>They are case-sensitive (myVar and myvar are different).
+                </li>
+               <li>They should not be JavaScript reserved keywords (var, let, const, etc.)</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>3. What are the different data types in JavaScript?</h2>
+        <p class="padding">JavaScript has eight main data types, which are categorized into  primitive and non-primitive (reference) types. <br> A data type defines the kind of values a variable can hold</p>
+        <h2>A. Primitive Data Types (Stored directly in memory, Stores only a single value)</h2>
+            <p class="padding">These are immutable (cannot be changed)</p>
+            
+                <h2 class="padding">1. String (Text)</h2>
+                <h4 class="padding">enclosed in single ('), double ("), or backticks (`)</h4>
+                    <p class="padding">let greeting = "Hello, World!"; <br> console.log(greeting); // Output: Hello, World!</p>
+                <h2 class="padding">2. Number (Whole numbers & decimals) </h2>
+                <h4 class="padding">Represents numbers (integers & floating-point).</h4>
+                <p class="padding">let age = 30; <br> let price = 99.99; <br>console.log(age, price);</p>
+                <h2>3. Boolean</h2>
+                <h4 class="padding">Represents true or false.</h4>
+                <p class="padding">let isRaining = false; <br>let isSunny = true;<br> console.log(isRaining);</p>
+                <h2>4. Null</h2>
+                <h4 class="padding">Represents an empty or unknown value</h4>
+                <p class="padding">let car = null; <br>console.log(car); // Output: null</p>
+                <h2>5. Undefined</h2>
+                <h4 class="padding">A variable that has been declared but not assigned a value.</h4>
+                <p class="padding">let temperature; <br> console.log(temperature); // Output: undefined</p>
+                <h2>B.  Non-Primitive Data Types (Stores multiple values)
+                </h2>
+                <h2>1. Objects </h2>
+                <h4 class="padding">Used for collections of key-value pairs</h4>
+                <p class="padding">let student = { <br> name:  "Ali",  <br>age: 20 <br> isEnrolled: true } <br>; console.log(student.name); // Output: Al</p>
+                <h2>2. Arrays</h2>
+                <h4 class="padding">Ordered lists for storing data store multiple value</h4>
+                <p class="padding">let numbers = [1, 2, 3, 4]; <br> console.log(numbers); <br> <button id="consoleButton">Go to Console</button> // Output: [1, 2, 3,4]</p>
+                <h2>3. Function</h2>
+
+            </section>
+            <section>
+                <h2>4. What is the difference between == and ===?</h2>
+                    <ul>
+                        <li>== (loose equality) checks only values and allows type conversion.</li>
+                        <li>=== (strict equality) checks both value and type.</li>
+                    </ul>
+            </section>
+            <section>
+                <h2>5. Convert "10" to a number using JavaScript.</h2>
+                <code>let num = Number("10"); // or parseInt("10") or +"10"
+                </code>
+            </section>
+            <section>
+                <h2>6. What will be the output of 5 + "5"?</h2>
+                <p class="padding">"55" (String concatenation because "5" is a string)</p>
+            </section>
+            <section>
+                <h2>7. What is the result of true && false?</h2>
+                <p class="padding">false (Logical AND returns true only if both operands are true).</p>
+            </section>
+            <section>
+                <h2>8. What is the difference between null and undefined?</h2>
+                <p class="padding">null is an assigned value representing "no value." <br>undefined means a variable has been declared but not assigned a value.</p>
+            </section>
+            <section>
+                <h2>9. What is the difference between alert, prompt, and confirm?</h2>
+                <ul class="padding">
+                    <li> <b>alert("Message"): </b> Displays a message with an OK button.</li>
+                    <li> <b>prompt("Enter value"): </b> Asks for input and returns a string.</li>
+                    <li> <b>confirm("Are you sure?"):</b> Returns true for OK and false for Cancel.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Write a JavaScript script to swap two numbers.</h2>
+                <pre><code>
+                        let a = 5, b = 10;
+                        [a, b] = [b, a]; // Swaps values
+                        
+                        console.log(a, b); // Output: 10 5
+                    </code></pre>
+            </section>
     <footer>
         <p>Submitted by: [Gulfam]</p>
     </footer>
+    <script src="script.js"> </script>
 </body>
 </html>
