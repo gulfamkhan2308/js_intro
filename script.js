@@ -68,7 +68,7 @@ undefined.. means a variable has been declared but has not been assigned a value
 
 // Take two boolean values from the user
 let bool1 = prompt("Enter first boolean value (true/false):") === "true";
-let bool2 = prompt("Enter second boolean value (true/false):") === "true";
+let bool2 = prompt("Enter second boolean value (true/false):") === "true"; 
 
 // Perform logical operations
 console.log(`AND (&&): ${bool1 && bool2}`);
