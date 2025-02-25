@@ -48,6 +48,6 @@ let quotient = num1 / num2;
 
 // Displaying results using alert()
 alert("Sum: " + sum +
-      "\nDifference: " + difference +
-      "\nProduct: " + product +
-      "\nQuotient: " + quotient);
+      "\n Difference: " + difference +
+      "\n Product: " + product +
+      "\n Quotient: " + quotient);

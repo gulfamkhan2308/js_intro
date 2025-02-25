@@ -51,10 +51,25 @@ table tr:nth-child(even) {
 table tr:hover {
     background-color: #d18d8d;
 }
-.framimg{
+.framimg {
     height: auto;
     width: 50vh;
 }
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .framimg {
+        width: 40vw; /* Change width for smaller screens */
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 1200px) {
+    .framimg {
+        width: 80vh; /* Change width for larger screens */
+    }
+}
+
 .padding{
     padding-left: 7vh;
 
