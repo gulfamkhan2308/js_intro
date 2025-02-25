@@ -6,7 +6,17 @@ let a = [1, 2, 3, 4];
 
 
 
+//  prompt("Enter a number:");
+
+
+
+// prompt("Enter another number:");
+
+alert("The sum is: " + (parseInt(prompt("Enter a number:")req) + parseInt(prompt("Enter another number:"))));
+
 document.getElementById("consoleButton").addEventListener("click", function() {
     alert("Press F12 or Ctrl+Shift+I to open the console.");
     console.log("[1, 2, 3, 4]");
 });
+
+
