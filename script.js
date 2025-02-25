@@ -47,7 +47,31 @@ let product = num1 * num2;
 let quotient = num1 / num2;
 
 // Displaying results using alert()
-alert("Sum: " + sum +
-      "\n Difference: " + difference +
-      "\n Product: " + product +
-      "\n Quotient: " + quotient);
+alert(`Sum: ${sum}\n Difference: ${difference}\n Product: ${product}\n Quotient: ${quotient}`);
+
+
+
+// Declare variables with null and undefined
+let nullVariable = null;
+let undefinedVariable;
+
+// Print both values
+console.log("nullVariable:", nullVariable);
+console.log("undefinedVariable:", undefinedVariable);
+
+/*
+Difference:
+null.. is an assigned value that represents the intentional absence of an object.
+undefined.. means a variable has been declared but has not been assigned a value.
+*/
+
+
+// Take two boolean values from the user
+let bool1 = prompt("Enter first boolean value (true/false):") === "true";
+let bool2 = prompt("Enter second boolean value (true/false):") === "true";
+
+// Perform logical operations
+console.log(`AND (&&): ${bool1 && bool2}`);
+console.log(`OR (||): ${bool1 || bool2}`);
+console.log(`NOT (!bool1): ${!bool1}`);
+console.log(`NOT (!bool2): ${!bool2}`);
